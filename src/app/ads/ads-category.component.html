@@ -1,0 +1,52 @@
+<br>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h1>{{pageTitle}}</h1>
+    </div>
+    <div class="panel-body">
+        <div class='row'>
+            <div class='col-md-6'>
+                <p>Please select from the following categories:</p>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col-md-4'>
+            <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+
+                <div class="checkbox">
+                    <label><input type="checkbox" name="fashion" ngModel>Fashion</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="car" ngModel>Car</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="animal" ngModel>Animal</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="game" ngModel>Video Game</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="phone" ngModel>Mobile Phone</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="food" ngModel>Food</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="travel" ngModel>Travel</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="computer" ngModel>Computer</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="beauty" ngModel>Beauty</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="newIt" ngModel>New IT</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
